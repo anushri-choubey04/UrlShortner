@@ -1,0 +1,21 @@
+{
+  "name": "url",
+  "version": "1.0.0",
+  "main": "index.js",
+  "homepage": "'https://github.com/anushri-choubey04/UrlShortner.git'",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
+    "mongoose": "^8.17.1",
+    "nodemon": "^3.1.10",
+    "shortid": "^2.2.17"
+  }
+}

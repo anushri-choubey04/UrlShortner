@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>URL shortener</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Welcome to the URL Shortener</h1>
+      <form action="/shortId" method="POST">
+        <label for="url">Enter URL to shorten:</label>
+        <input type="text" id="url" name="url" required />
+        <button type="submit">Shorten</button>
+      </form>
+      <% if(url) { %>
+      <p>Short Url : <a href="<%= url %>" target="_blank"> <%= url %> </a></p>
+      <%} %>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
